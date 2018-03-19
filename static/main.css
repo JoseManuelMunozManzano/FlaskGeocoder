@@ -1,0 +1,39 @@
+html {
+	min-height: 100%;
+	margin: 0px;
+	padding: 2px;
+	background: #003973; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #003973, #e5e5be); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #003973, #e5e5be); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center
+}
+
+div {
+	color: #f4f5f5;
+}
+
+div h1 {
+	font-family: 'Fjalla One', sans-serif;
+}
+
+div h3 {
+	font-family: 'Average', serif;
+}
+
+div label {
+	font-family: 'Average', serif;
+}
+
+div button {
+	width: 70px;
+	height: 20px;
+	color: #353c3e;
+	background-color: #f4f5f5;
+	font-family: 'Average', serif;
+	margin: 15px;
+}
+
+div table {
+    margin-left:auto; 
+    margin-right:auto;
+}

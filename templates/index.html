@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Geocoder Web Service</title>
+	<link rel="stylesheet" href="../static/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Average" rel="stylesheet">
+</head>
+<body>
+	<div>
+		<h1>Super Geocoder</h1>
+		<h3>Please upload your CSV file. The values containing addresses should be in a column named address or Address</h3>
+		<form action={{url_for('success')}} method="POST" enctype="multipart/form-data">
+			<label for="file">Choose file to upload</label>
+			<input type="file" id="file", name="file">
+			<button type="submit">Submit</button>	
+		</form>
+		<div>
+			{{text | safe}}
+		</div>
+		{% include tables ignore missing %}
+		{% include btn ignore missing %}
+	</div>
+</body>
+</html>
